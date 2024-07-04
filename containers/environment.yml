@@ -1,0 +1,27 @@
+name: prevent-nf
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.7.7
+  - typer=0.4.0
+  - black=19.10b0
+  - pylint=2.7.4
+  - pandas=1.3.5
+  - seaborn=0.11.2
+  - matplotlib=3.2.0
+  - numpy=1.20.2
+  - scipy=1.6.2
+  - biopython=1.79
+  - mmseqs2=13.45111
+  - blast=2.10.1
+  - clustalo=1.2.4
+  - seqtk=1.3
+  - seqkit=2.1.0
+  - scikit-learn=0.24.1
+  - hhsuite=3.3.0
+  - pip=22.2.2
+  - pip:
+    - fair-esm==1.0.2
+    - autograd_minimize==0.2.2

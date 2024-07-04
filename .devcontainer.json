@@ -1,0 +1,37 @@
+{
+	// setup a container to develop a python package using miniconda3
+	"name": "prevent-nf",
+	"dockerFile": "containers/Dockerfile",
+	"context": ".",
+	"build": {"args": {"CONDA_FILE": "containers/environment.yml"}},
+
+	// Set *default* container specific settings.json values.
+	"settings": {
+
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "/bin/bash",
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "bash",
+		"python.pythonPath": "/opt/conda/bin/python",
+		"python.formatting.provider": "black",
+		"python.formatting.blackPath": "/opt/conda/bin/black",
+		"[python]": {
+			"editor.rulers": [
+				90
+			]
+		},
+	},
+
+	// extensions for vscode
+	"extensions": [
+		"ms-python.python",
+		"stkb.rewrap",
+		"donjayamanne.githistory",
+		"aaron-bond.better-comments",
+		"gruntfuggly.todo-tree",
+		"mhutchie.git-graph"
+	],
+
+}

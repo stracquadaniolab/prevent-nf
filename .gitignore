@@ -1,0 +1,11 @@
+work/
+results/
+logs/
+preprocessing/
+postprocessing/
+foldx-downloads/
+.DS_Store
+*.pyc
+.vscode
+.nextflow*
+optimizing_input.ipynb
